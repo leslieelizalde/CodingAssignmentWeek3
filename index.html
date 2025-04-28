@@ -1,0 +1,221 @@
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following: -->
+<!--At least 2 pages.-->
+<!--A Bootstrap navbar, table, and form.-->
+<!--Bootstrap grid used throughout to format elements-->
+<!--Elements should stack vertically when the window is small-->
+<!--Creat gitignore-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content = "Leslie Elizalde" >
+   
+   <title>My Bootstrap Project</title>
+
+    <!-- Here I linked bootstrap found under the node modules folder which contains the external dependencies. -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+   <!--Here I linked the css stylesheet.-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar from top of list on boostrap site.-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Vibes</a>
+
+          <!--Hamburger button-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <!--Navbar links-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+            </ul>
+
+            <!--Search bar and search button-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <!-- HERO -->
+    <div>
+        <img class="img-fluid" src="images/hero_image.jpg" alt="Classic car driving down desert highway.">
+    </div>
+
+      <!-- WELCOME -->
+    <h1 class="text-center p-1">Stay in Arizona in luxury and comfort.  </h1>
+    <p class="text-center fs-5">No matter your style, we match your vibe.</p>
+    <p class="text-center fs-5">Embrace the desert and cool off in one our three hotels.</p>  
+
+    <div class ="m-3 p-3">
+        <p class="fs-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate cum nihil debitis exercitationem iste reiciendis quaerat provident reprehenderit maxime laboriosam ipsam iusto pariatur asperiores nemo illo soluta, esse assumenda rem!
+        </p>
+    </div>
+   
+    <!-- CARDS -->
+    <div class="container ">
+        <div class="row row-cols-1 row-cols-lg-3 g-5 m-3 pt-5"> <!--row stacking designation, gutter, margin, padding-->
+        
+        <!-- Column 1 Downtown Vibes-->
+          <div class="col">
+        <!--Card start-->
+            <div class="card h-100 shadow-lg"> <!--Card Height-->
+                <img src="images/downtown_image.jpg" class="card-img-top" alt="Downtown Hotel pool."> <!--Card image Photo by Pixabay from Pexels: https://www.pexels.com/photo/white-sunloungers-beside-pool-261102/ --> 
+                <div class="card-body">
+                    <h5 class="card-title">Downtown Vibes</h5>
+                    <p class="card-text fs-5"><!--Card text size-->Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reiciendis totam animi fugiat doloremque beatae distinctio nihil sit, temporibus ullam recusandae tempore quo nemo eligendi! Error reiciendis ullam nisi pariatur?</p>
+            
+                </div>
+            </div>
+          </div>
+ 
+        <!--Column 2 Desert Vibes-->
+          <div class="col">
+        <!--Card start-->
+            <div class="card h-100 shadow-lg"> <!--Card Shadow-->
+                <img src="images/desert_image3.jpg" class="card-img-top" alt="Desert Vibes Hotel poolside."> <!-- https://ygt-res.cloudinary.com/image/upload/c_fit,h_1280,q_80,w_1920/v1614083104/Venues/The%20Ritz-Carlton%2C%20Dove%20Mountain/ritz_carlton_dove_mountain_8.jpg -->
+                <div class="card-body">
+                  <h5 class="card-title">Desert Vibes</h5>
+                  <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur consectetur maxime nulla dicta deleniti quidem asperiores quia maiores quae fuga dolorem suscipit quos, minus totam odio ex nobis cupiditate? Architecto.</p>
+                </div>
+              </div>
+          </div>
+          <!--Column 3 Sunny Vibes-->
+          <div class="col">
+        <!--Card start-->
+            <div class="card h-100 shadow-lg">
+                <img src="images/sunny_image.jpg" class="card-img-top" alt="Sunny Vibes Hotel poolside."> <!--https://en.itravelblog.net/grand-mercure-okinawa-cape-zanpa-resort/ -->
+                <div class="card-body">
+                <h5 class="card-title">Sunny Vibes</h5>
+                <p class="card-text fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quod! Veniam corporis maiores at incidunt nemo distinctio vero vitae voluptatum ratione temporibus aliquid possimus magnam illum unde blanditiis, deleniti quo!</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <!-- PICTURE DIV -->
+
+    <div class="container mt-5 mb-5 pt-5 pb-5 text-center"> <!--Picture grid title--> <!-- margin & padding-->
+        <div class="row gx-0 g-0"> <!--Removing gutter-->
+          <div class="col-sm-12 pb-3"><h2>Enjoy any of our amenities.</h2> </div>
+        </div>
+
+        <div class="row gx-0 g-0">
+          <div class="col-sm-8">
+            <img class="image-fluid" src="images/spa.jpeg" alt="Spa photo" width="100%" height="100%"> <!--https://www.ritzcarlton.com/en/hotels/tusrz-the-ritz-carlton-dove-mountain/experiences/ -->
+         </div>
+          <div class="col-sm-4">
+            <img class="image-fluid" src="images/golf.jpg" alt="Golf course at Vibes Hotels" width="100%" height="100%"> <!--https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsMzcxNzcxMjkwNjYtaW1hZ2UuanBn.jpg -->
+          </div>
+        </div>
+
+        <div class="row gx-0 g-0">
+            <div class="col-sm-4">
+                <img class="image-fluid" src="images/restaurant_image.jpg" alt="Restaurant" width="100%" height="100%"> <!--https://cms.thuecat.org/o/adaptive-media/image/8868127/Preview-1280x0/image -->
+            </div>
+            <div class="col-sm-8">
+                <img class="image-fluid" src="images/gym.jpeg" alt="Gym" width="100%" height="100%"><!-- https://www.deviantart.com/gronkulator/art/Resort-Fitness-Center-79908928 -->
+            </div>
+          </div>
+    </div>
+
+    <hr class="border border-black border-1 opacity-10">
+
+    <!-- IMG VIEW ALL LOCATIONS-->
+    <div class="container mt-5 pt-5">
+
+        <div class="card text-bg-dark">
+            <a href="destinations.html" class="link-light">
+                <img src="images/lobby.webp" class="card-img img-fluid" alt="Visit any of our Vibes Hotel Locations" width="300px" height="300px"> <!-- https://cdn.prod.website-files.com/5c729f15fd0819dbaf8e66c6/65282116bff11a69368e797d_Whitney%20Peak%20Hotel.webpS-->
+                <div class="card-img-overlay">
+                <h3 class="card-title">View All Locations</h3>
+                <p class="card-text fs-5"> Where your desert travels take you, we are there.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--CONTACT FORM -->
+    <h1 class="text-center mt-5 pt-5">Contact Us</h1>
+    <h2 class="text-center mb-4"> Let's plan your stay!</h2> 
+    <div class="container">
+
+        <form class="row g-3 mb-5 ms-3 me-3 pt-5">
+
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control"  aria-label="First name" id="firstname">
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control"  aria-label="Last name" id="lastname">
+            </div>
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button> <!--submit button-->
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+ <footer class="pt-5 pb-5">  
+    <div class="text-center p-2">
+     <h5> 2025 Copyright Hotel Vibes </h5>
+    </div>
+</footer> 
+    
+<!--Javascript Link-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
